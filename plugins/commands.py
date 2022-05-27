@@ -15,11 +15,11 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, InputMedi
 @Client.on_message(filters.private & filters.command(['start']))
 async def start(client, message):
     buttons = [[
-        InlineKeyboardButton('📜 Support Group', url='https://t.me/DxHelpDesk'),
-        InlineKeyboardButton('Update Channel ♻️', url='https://t.me/DX_Botz')
+        InlineKeyboardButton('📜 Support Group', url='https://t.me/BeastXBotz'),
+        InlineKeyboardButton('☢️ Update Channel', url='https://t.me/BeastXBots')
         ],[
-        InlineKeyboardButton('💡 SouceCode', url='https://github.com/Jijinr/Frwdit-V2'),
-        InlineKeyboardButton('String Session 🎻', url ='https://replit.com/@JijinR/PyroSessionString?v=1')
+        InlineKeyboardButton('⚡ Powered By', url='https://t.me/B34STZ'),
+        InlineKeyboardButton('🧑‍💻 Dev', url ='https://t.me/Be4stX')
     ]]
     reply_markup = InlineKeyboardMarkup(buttons)
     await client.send_message(
@@ -34,8 +34,8 @@ async def start(client, message):
 @Client.on_message(filters.private & filters.command(['help']))
 async def help(client, message):
     buttons = [[
-        InlineKeyboardButton('SouceCode 💡', url='https://github.com/Jijinr/Frwdit-V2'),
-        InlineKeyboardButton('close 🔐', callback_data='close_btn')
+        InlineKeyboardButton('⚡ Powered By', url='https://t.me/B34STZ'),
+        InlineKeyboardButton('🔒 close', callback_data='close_btn')
     ]]
     reply_markup = InlineKeyboardMarkup(buttons)
     await client.send_message(
@@ -49,8 +49,8 @@ async def help(client, message):
 @Client.on_message(filters.private & filters.command(['about']))
 async def about(client, message):
     buttons = [[
-        InlineKeyboardButton('💡 SouceCode', url='https://github.com/Jijinr/Frwdit-V2'),
-        InlineKeyboardButton('close 🔐', callback_data='close_btn')
+        InlineKeyboardButton('⚡ SouceCode', url='https://t.me/B34STZ'),
+        InlineKeyboardButton('🔒 close ', callback_data='close_btn')
     ]]
     reply_markup = InlineKeyboardMarkup(buttons)
     await client.send_message(
