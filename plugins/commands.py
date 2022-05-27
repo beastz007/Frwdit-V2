@@ -49,7 +49,7 @@ async def help(client, message):
 @Client.on_message(filters.private & filters.command(['about']))
 async def about(client, message):
     buttons = [[
-        InlineKeyboardButton('⚡ SouceCode', url='https://t.me/B34STZ'),
+        InlineKeyboardButton('⚡ Powered by', url='https://t.me/B34STZ'),
         InlineKeyboardButton('🔒 close ', callback_data='close_btn')
     ]]
     reply_markup = InlineKeyboardMarkup(buttons)
